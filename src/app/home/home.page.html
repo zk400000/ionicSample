@@ -1,230 +1,107 @@
-<!-- <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-app>
+  <ion-header>
+    <ion-toolbar class="ion-padding">
+      <ion-grid>
+        <ion-row>
+          <ion-col size="1">
+            <div class="ion-padding-horizontal" >
+              <ion-buttons >
+                <ion-button color="secondary">
+                  <ion-icon name="image-outline"></ion-icon>
+                </ion-button>
+              </ion-buttons>
+            </div>
+          </ion-col>
+          <ion-col size="9">
+            <div>
+              <ion-title>Robaczek Paskudnik</ion-title>        
+            </div>
+          </ion-col>
+          <ion-col size="1">
+            <div>
+              <ion-buttons >
+                <ion-button color="secondary">
+                  <ion-icon name="search-outline"></ion-icon>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
+                </ion-button>
+              </ion-buttons>
+            </div>
+          </ion-col>
+          <ion-col size="1">
+            <div class="ion-padding-end">
+              <ion-buttons >
+                <ion-button color="secondary">
+                  <ion-icon name="grid-outline"></ion-icon>
+                </ion-button>
+              </ion-buttons>
+            </div>
+          </ion-col>
+
+        </ion-row>
+      </ion-grid>
+    
     </ion-toolbar>
   </ion-header>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
-</ion-content> -->
-<!-- <ion-app>
-  <ion-menu content-id="main-content">
-    <ion-header>
-      <ion-toolbar color="primary">
-        <ion-title>Menu</ion-title>
-      </ion-toolbar>
-    </ion-header>
+  <ion-content class="ion-padding">
+    <h1>Main Content</h1>
+  </ion-content>
 
-    <ion-content>
-      <ion-list>
-        <ion-list-header>
-          Navigate
-        </ion-list-header>
-        <ion-menu-toggle auto-hide="false">
-          <ion-item button>
-            <ion-icon slot="start" name='home'></ion-icon>
-            <ion-label>
-              Home
-            </ion-label>
-          </ion-item>
-        </ion-menu-toggle>
-      </ion-list>
-    </ion-content>
-  </ion-menu>
+  <ion-footer>
+    <ion-toolbar>
 
-  <ion-page class="ion-page" id="main-content">
-    <ion-header>
-      <ion-toolbar>
-        <ion-buttons slot="start">
-          <ion-menu-toggle>
-            <ion-button>
-              <ion-icon slot="icon-only" name="menu"></ion-icon>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <div class="ion-padding-horizontal" style="background-color: blue;">
+          <ion-buttons >
+            <ion-button color="secondary">
+              <ion-icon name="home-outline"></ion-icon>
             </ion-button>
-          </ion-menu-toggle>
-        </ion-buttons>
-        <ion-title>Header</ion-title>
-      </ion-toolbar>
-    </ion-header>
-    <ion-content class="ion-padding">
-      <h1>Main Content</h1>
-      <p>Click the icon in the top left to toggle the menu.</p>
-    </ion-content>
-  </ion-page>
-</ion-app>
-
-<ion-menu-controller></ion-menu-controller> -->
-
-
-<!-- <ion-app>
-  <ion-split-pane when="sm" content-id="main-content">
-    <ion-menu content-id="main-content">
-      <ion-header>
-        <ion-toolbar color="primary">
-          <ion-title>Menu</ion-title>
-        </ion-toolbar>
-      </ion-header>
-
-      <ion-content>
-        <ion-list>
-          <ion-list-header>
-            Navigate
-          </ion-list-header>
-          <ion-menu-toggle auto-hide="false">
-            <ion-item button>
-              <ion-icon slot="start" name='home'></ion-icon>
-              <ion-label>
-                Home
-                
-              </ion-label>
-            </ion-item>
-          </ion-menu-toggle>
-        </ion-list>
-      </ion-content>
-    </ion-menu>
-
-    <div class="ion-page" id="main-content">
-      <ion-header>
-        <ion-toolbar>
-          <ion-buttons slot="start">
-            <ion-menu-toggle>
-              <ion-button>
-                <ion-icon slot="icon-only" name="menu"></ion-icon>
-              </ion-button>
-            </ion-menu-toggle>
           </ion-buttons>
-          <ion-title>Header</ion-title>
-        </ion-toolbar>
-      </ion-header>
-      <ion-content class="ion-padding">
-        <h1>Main Content</h1>
-        <ion-grid>
-          <ion-row>
-            <ion-col size=7> 
-              <div>
-                1 of 3
-              </div>
-            </ion-col>
-            <ion-col size=4>
-              <div>
-                2 of 3
-              </div>
-            </ion-col>
-            <ion-col size=auto>
-              <div>
-                3 of 3
-              </div>
-            </ion-col>
-          </ion-row>
-        </ion-grid>
-      </ion-content>
-    </div> 
-
-  </ion-split-pane>
-</ion-app> -->
-
-
-<ion-app>
-  <ion-menu content-id="main-content">
-    <ion-header>
-      <ion-toolbar color="primary">
-        <ion-title>Menu</ion-title>
-      </ion-toolbar>
-    </ion-header>
-
-    <ion-content>
-      <ion-list>
-        <ion-list-header>
-          Navigate
-        </ion-list-header>
-        <ion-menu-toggle auto-hide="false">
-          <ion-item button>
-            <ion-icon slot="start" name='home'></ion-icon>
-            <ion-label>
-              Home
-            </ion-label>
-          </ion-item>
-        </ion-menu-toggle>
-      </ion-list>
-
-   
-    </ion-content>
-  </ion-menu>
-
-  <ion-page class="ion-page" id="main-content">
-    <ion-header>
-      <ion-toolbar>
-        <ion-buttons slot="start">
-          <ion-menu-toggle>
-            <ion-button>
-              <ion-icon slot="icon-only" name="menu"></ion-icon>
+        </div>
+      </ion-col>
+      <ion-col>
+        <div class="ion-no-padding">
+        <ion-buttons >
+            <ion-button color="secondary">
+              <ion-icon name="people-outline"></ion-icon>
             </ion-button>
-          </ion-menu-toggle>
-        </ion-buttons>
-        <ion-title>Header</ion-title>
+          </ion-buttons>
+        </div>
+      </ion-col>
+      <ion-col>
+        <div>
+          <ion-buttons >
+            <ion-button color="secondary">
+              <ion-icon name="chatbubbles-outline"></ion-icon>
+            </ion-button>
+          </ion-buttons>
+        </div>
+      </ion-col>
+      <ion-col>
+        <div class="ion-padding-end">
+          <ion-buttons >
+            <ion-button color="secondary">
+              <ion-icon name="notifications-outline"></ion-icon>
+            </ion-button>
+          </ion-buttons>
+        </div>
+      </ion-col>
+      <ion-col>
+        <div>
+          <ion-buttons >
+            <ion-button color="primary">
+              <ion-icon name="mail-unread-outline"></ion-icon>
+            </ion-button>
+          </ion-buttons>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 
-             </ion-toolbar>
-    </ion-header>
-    <ion-content class="ion-padding">
-      <h1>Main Content</h1>
-      <p>Click the icon in the top left to toggle the menu.</p>
+    </ion-toolbar>
+  </ion-footer>
 
-      <ion-grid>
-        <ion-row>
-          <ion-col>
-            <div class="ion-text-start">
-              <h3>text-start</h3>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac vehicula lorem.
-            </div>
-          </ion-col>
-          <ion-col>
-            <div class="ion-text-end">
-              <h3>text-end</h3>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac vehicula lorem.
-            </div>
-          </ion-col>
-          <ion-col>
-            <div class="ion-text-center">
-              <h3>text-center</h3>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac vehicula lorem.
-            </div>
-          </ion-col>
-        </ion-row>
-        <ion-row>
-          <ion-col>
-            <div class="ion-text-justify">
-              <h3>text-justify</h3>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac vehicula lorem.
-            </div>
-          </ion-col>
-          <ion-col>
-            <div class="ion-text-wrap">
-              <h3>text-wrap</h3>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac vehicula lorem.
-            </div>
-          </ion-col>
-          <ion-col>
-            <div class="ion-text-nowrap">
-              <h3>text-nowrap</h3>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            </div>
-          </ion-col>
-        </ion-row>
-      </ion-grid>
-
-      
-    </ion-content>
-  </ion-page>
+  
 </ion-app>
-
-<ion-menu-controller></ion-menu-controller>
